@@ -126,13 +126,6 @@
   .final-cta p{color:#EADFF5; max-width:52ch;}
   .final-cta .btn-primary{white-space:nowrap;}
 
-  .float-wsp{
-    position:fixed; bottom:20px; right:20px; z-index:50; background:var(--amarillo); color:var(--oscuro);
-    width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center;
-    box-shadow:0 10px 24px rgba(33,22,43,.3); text-decoration:none;
-  }
-  .float-wsp svg{width:28px; height:28px;}
-
   @media (max-width: 900px){
     .story-grid{grid-template-columns:1fr 1fr;}
     .product-grid{grid-template-columns:1fr 1fr;}
@@ -225,11 +218,6 @@
     </a>
   </div>
 </section>
-
-
-<a class="float-wsp" href="https://wa.me/56978043714?text=Hola%20Balateca%2C%20quiero%20cotizar%20tambores%20de%20freno." target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2C6.486 2 2 6.486 2 12.004c0 1.94.539 3.798 1.539 5.406L2 22l4.729-1.508a9.99 9.99 0 0 0 5.275 1.512h.005c5.518 0 10.004-4.486 10.004-10.004 0-2.673-1.04-5.187-2.928-7.075A9.936 9.936 0 0 0 12.004 2zm0 18.16h-.004a8.14 8.14 0 0 1-4.155-1.14l-.298-.177-2.807.897.9-2.735-.194-.281a8.155 8.155 0 0 1-1.25-4.35c0-4.507 3.667-8.174 8.176-8.174 2.183 0 4.235.851 5.777 2.396a8.116 8.116 0 0 1 2.393 5.781c0 4.507-3.666 8.174-8.173 8.174z"/></svg>
-</a>
 
 <script>
 const PRODUCTOS = [{"balat": "FA-TF-0189-BALAT", "oem": "8-97094-4342", "desc": "Tambor de freno Isuzu NKR 2.8 delantero", "compat": "Isuzu NKR 2,8 / 3,1", "pos": "Delantero", "neto": 67647, "iva": 80500, "stock": "alto"}, {"balat": "FA-TF-1001-BALAT", "oem": "A30542100001", "desc": "Tambor de freno M. Benz OF 1318 delantero", "compat": "Mercedes-Benz OF 1318", "pos": "Delantero", "neto": 135294, "iva": 161000, "stock": "limitado"}, {"balat": "FA-TF-1002-BALAT", "oem": "A6174230201", "desc": "Tambor de freno M. Benz 1318 TR1031", "compat": "Mercedes-Benz OF 1318", "pos": "—", "neto": 121849, "iva": 145000, "stock": "alto"}, {"balat": "FA-TF-1003-BALAT", "oem": "A3014230801", "desc": "Tambor de freno M. Benz trasero 0370/0400/0500", "compat": "Mercedes-Benz 0370/0400/0500", "pos": "Trasero", "neto": 141176, "iva": 168000, "stock": "alto"}, {"balat": "FA-TF-1005-BALAT", "oem": "3598-607-617", "desc": "Tambor de freno Ford Cargo / VW trasero", "compat": "Ford Cargo", "pos": "—", "neto": 121849, "iva": 145000, "stock": "alto"}, {"balat": "FA-TF-1006-BALAT", "oem": "TAR609-617B", "desc": "Tambor de freno VW690 / 9.150 / 8.120", "compat": "Ford VW690/9.150/8.120/Cargo 915", "pos": "Delantero/Trasero", "neto": 77311, "iva": 92000, "stock": "alto"}, {"balat": "FA-TF-1024-BALAT", "oem": "360573", "desc": "Tambor de freno Scania Serie 4 trasero", "compat": "Scania Serie 4", "pos": "Trasero", "neto": 209244, "iva": 249000, "stock": "disponible"}, {"balat": "FA-TF-1031-BALAT", "oem": "A3054230401", "desc": "Tambor de freno M. Benz Actros trasero", "compat": "Mercedes-Benz Actros", "pos": "Trasero", "neto": 137815, "iva": 164000, "stock": "disponible"}, {"balat": "FA-TF-1033-BALAT", "oem": "606917A", "desc": "Tambor de freno VW Volare / Ford Cargo trasero", "compat": "Volare / Ford Cargo", "pos": "Trasero", "neto": 119328, "iva": 142000, "stock": "alto"}, {"balat": "FA-TF-1036-BALAT", "oem": "A6244210201", "desc": "Tambor de freno M. Benz Actros 2004→ delantero", "compat": "Mercedes-Benz Actros 2004→", "pos": "Delantero", "neto": 129412, "iva": 154000, "stock": "alto"}, {"balat": "FA-TF-1038-BALAT", "oem": "8-94382-8844", "desc": "Tambor de freno Isuzu NKR 2.8/3.1 1994→ delantero", "compat": "Isuzu NKR 2,8/3,1 1994→", "pos": "Delantero", "neto": 80672, "iva": 96000, "stock": "alto"}, {"balat": "FA-TF-1041-BALAT", "oem": "8-97081-219-2", "desc": "Tambor de freno NPR 4.3 1994→ trasero", "compat": "Isuzu NPR 4.3 1994→", "pos": "Trasero", "neto": 77311, "iva": 92000, "stock": "disponible"}, {"balat": "FA-TF-1054-BALAT", "oem": "1414153", "desc": "Tambor de freno Scania Serie 4 delantero", "compat": "Scania Serie 4", "pos": "Delantero", "neto": 151261, "iva": 180000, "stock": "alto"}, {"balat": "TF-3540-S BALATE", "oem": "T06609617-C", "desc": "Tambor de freno Volkswagen / Ford Cargo 915 delantero", "compat": "Volkswagen / Ford Cargo 915", "pos": "Delantero", "neto": 77311, "iva": 92000, "stock": "alto"}];
